@@ -4,6 +4,8 @@ const express = require('express');
 const {decamelizeKeys, camelizeKeys} = require('humps');
 const knex = require('../knex');
 const bcrypt = require ("bcrypt-as-promised");
+const ev = require('express-validation');
+const validations = require('../validations/users');
 
 // eslint-disable-next-line new-cap
 const router = express.Router();
